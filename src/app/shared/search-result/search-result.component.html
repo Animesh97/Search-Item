@@ -1,3 +1,6 @@
-<p>
-  search-result works!
-</p>
+<h1>Listed Products</h1>
+
+<input type="button" value="Click" (click)="storeItem()">
+<div *ngFor="let items of itemList">	
+  <app-search-result-list [item]="items"></app-search-result-list>
+</div>
